@@ -4,13 +4,10 @@ use std::io::Error;
 use std::io::Write;
 use std::path::Path;
 
-//args = 100, 5MB, 6KB, 2B
-// fsm file.jpg [arg]
-
 fn main() -> Result<(), Error> {
     let args: Vec<String> = env::args().collect();
     if args.len() != 3 {
-        println!("Invalid number of arguments. Usage: `fsm [filename] [filesize]`. Example: `fsm file.x 72MB`");
+        println!("Invalid number of arguments. Usage: `fizer [filename] [filesize]`. Example: `fizer file.x 72MB`");
         std::process::exit(0);
     }
     let config = Config::init(&args);
