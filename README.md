@@ -1,3 +1,3 @@
 # fizer
 
-`fizer` is a tool for making specific size files.
+`fizer` is a tool for creating specific size files.
